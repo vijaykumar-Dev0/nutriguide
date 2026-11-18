@@ -1,0 +1,8 @@
+{
+  "name": "Nutrition Awareness Website",
+  "description": "An interactive full-stack educational platform exploring essential nutrients, vitamins, deficiency diseases, balanced eating habits, healthy foods, and nutrition literacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

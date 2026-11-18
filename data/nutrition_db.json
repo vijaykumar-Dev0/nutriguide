@@ -1,0 +1,853 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "name": "Aarav Patel",
+      "email": "learner@nutriguide.org",
+      "password_hash": "f68ac7d9ee730b34b2591a51928faef4:19e4dcc9c0d4f5c8aed3e7243828ee86b796842afeb6ffeca55931013d1197aa36332c67672197478beb7ba2e36fe8ebda4b4abf640e54c9bcc41f07e11c97bb",
+      "created_at": "2026-11-01T08:00:00.000Z",
+      "bookmarks": [
+        "nutrient:1",
+        "vitamin:3",
+        "deficiency:1",
+        "food:11"
+      ],
+      "quiz_history": [
+        {
+          "attempt_id": "seed-attempt-1",
+          "score": 8,
+          "total": 10,
+          "percentage": 80,
+          "created_at": "2026-11-10T10:15:00.000Z"
+        }
+      ]
+    }
+  ],
+  "nutrients": [
+    {
+      "nutrient_id": 1,
+      "nutrient_name": "Carbohydrates",
+      "category": "Macronutrient",
+      "daily_target": "45–65% of daily calories",
+      "description": "The body’s primary fuel source, broken down into glucose to power brain function, nervous system signaling, and physical movement.",
+      "functions": [
+        "Provides immediate and sustained energy for brain cells and working muscles",
+        "Preserves muscle protein by preventing amino acid breakdown for fuel",
+        "Dietary fiber supports healthy gut microbiota and regular digestion"
+      ],
+      "food_sources": [
+        "Rolled Oats",
+        "Quinoa",
+        "Brown Rice",
+        "Sweet Potatoes",
+        "Lentils",
+        "Fresh Fruits"
+      ],
+      "importance": "Prioritizing unrefined, high-fiber complex carbohydrates stabilizes blood glucose and reduces cardiovascular risk."
+    },
+    {
+      "nutrient_id": 2,
+      "nutrient_name": "Proteins",
+      "category": "Macronutrient",
+      "daily_target": "0.8–1.2 g per kg body weight",
+      "description": "Large biological macromolecules built from twenty amino acids that construct tissues, enzymes, antibodies, and cellular transporters.",
+      "functions": [
+        "Repairs and builds skeletal muscle, skin, hair, and connective tissue",
+        "Synthesizes metabolic enzymes, peptide hormones, and immune antibodies",
+        "Supports hemoglobin synthesis and satiety regulation between meals"
+      ],
+      "food_sources": [
+        "Wild Salmon",
+        "Farm Eggs",
+        "Lentils",
+        "Greek Yogurt",
+        "Chickpeas",
+        "Almonds"
+      ],
+      "importance": "Nine essential amino acids cannot be synthesized by humans and must come consistently from varied dietary protein."
+    },
+    {
+      "nutrient_id": 3,
+      "nutrient_name": "Fats",
+      "category": "Macronutrient",
+      "daily_target": "20–35% of daily calories",
+      "description": "Concentrated energy lipids essential for cell membrane fluidity, hormone production, myelin nerve insulation, and vitamin absorption.",
+      "functions": [
+        "Enables intestinal absorption of fat-soluble Vitamins A, D, E, and K",
+        "Forms structural phospholipid bilayers across all human cell membranes",
+        "Supplies essential omega-3 and omega-6 fatty acids for brain and heart health"
+      ],
+      "food_sources": [
+        "Avocado",
+        "Walnuts",
+        "Extra-Virgin Olive Oil",
+        "Wild Salmon",
+        "Chia Seeds",
+        "Almonds"
+      ],
+      "importance": "Replacing trans and excess saturated fats with monounsaturated and omega-3 fats protects arterial and cognitive health."
+    },
+    {
+      "nutrient_id": 4,
+      "nutrient_name": "Vitamins",
+      "category": "Micronutrient",
+      "daily_target": "Trace mg to mcg daily",
+      "description": "Organic micronutrients required in small quantities to act as coenzymes in energy metabolism, immune defense, vision, and cellular repair.",
+      "functions": [
+        "Catalyze cellular energy release from carbohydrates, fats, and proteins",
+        "Protect tissues from oxidative stress through antioxidant regeneration",
+        "Regulate gene expression, collagen formation, bone mineralization, and blood clotting"
+      ],
+      "food_sources": [
+        "Spinach",
+        "Yellow Bell Peppers",
+        "Oranges",
+        "Kiwi",
+        "Wild Salmon",
+        "Almonds"
+      ],
+      "importance": "Because most vitamins cannot be manufactured in sufficient quantities internally, daily dietary diversity is vital."
+    },
+    {
+      "nutrient_id": 5,
+      "nutrient_name": "Minerals",
+      "category": "Micronutrient",
+      "daily_target": "Trace mcg to 1,000+ mg daily",
+      "description": "Inorganic elements absorbed from soil and water via plants and foods, critical for skeletal strength, oxygen transport, and nerve impulses.",
+      "functions": [
+        "Calcium, phosphorus, and magnesium build dense bone and tooth mineral matrix",
+        "Iron carries oxygen in red blood cell hemoglobin; iodine powers thyroid hormones",
+        "Sodium, potassium, and chloride maintain fluid balance and cardiac rhythm"
+      ],
+      "food_sources": [
+        "Milk & Yogurt",
+        "Spinach",
+        "Broccoli",
+        "Lentils",
+        "Pumpkin Seeds",
+        "Iodized Foods"
+      ],
+      "importance": "Adequate mineral intake prevents silent structural losses such as osteopenia, anaemia, and thyroid dysfunction."
+    },
+    {
+      "nutrient_id": 6,
+      "nutrient_name": "Water",
+      "category": "Hydration",
+      "daily_target": "2.0–3.0 Liters daily",
+      "description": "The fundamental solvent of human physiology, composing roughly 60% of adult body mass and driving circulation, temperature regulation, and waste clearance.",
+      "functions": [
+        "Transports dissolved nutrients, electrolytes, and oxygen to every tissue",
+        "Regulates core body temperature through perspiration and blood flow",
+        "Lubricates joints, cushions organs, and clears metabolic waste via the kidneys"
+      ],
+      "food_sources": [
+        "Clean Drinking Water",
+        "Herbal Infusions",
+        "Cucumber",
+        "Oranges",
+        "Leafy Greens",
+        "Broth"
+      ],
+      "importance": "Even mild dehydration of 1–2% body weight measurably impairs concentration, mood, and physical stamina."
+    }
+  ],
+  "vitamins": [
+    {
+      "vitamin_id": 1,
+      "vitamin_name": "Vitamin A",
+      "chemical_name": "Retinol & Beta-Carotene",
+      "solubility": "Fat-Soluble",
+      "daily_rda": "700–900 mcg RAE",
+      "functions": [
+        "Synthesizes rhodopsin pigment in the retina for low-light and color vision",
+        "Maintains integrity of skin and mucosal barriers against respiratory pathogens",
+        "Supports white blood cell differentiation and healthy embryonic growth"
+      ],
+      "food_sources": [
+        "Sweet Potatoes",
+        "Spinach",
+        "Carrots",
+        "Yellow Bell Peppers",
+        "Farm Eggs",
+        "Fortified Milk"
+      ],
+      "deficiency_information": "Causes night blindness (nyctalopia), dry corneal membranes (xerophthalmia), rough skin, and heightened susceptibility to childhood infections."
+    },
+    {
+      "vitamin_id": 2,
+      "vitamin_name": "Vitamin B Complex",
+      "chemical_name": "B1, B2, B3, B5, B6, B7, B9, B12",
+      "solubility": "Water-Soluble",
+      "daily_rda": "1.1 mg B1 to 400 mcg Folate",
+      "functions": [
+        "Acts as essential cofactors converting dietary food into cellular ATP energy",
+        "Folate (B9) and Cobalamin (B12) direct DNA synthesis and red blood cell maturation",
+        "Supports neurotransmitter synthesis, myelin sheath maintenance, and nerve conduction"
+      ],
+      "food_sources": [
+        "Rolled Oats",
+        "Quinoa",
+        "Lentils",
+        "Spinach",
+        "Wild Salmon",
+        "Farm Eggs",
+        "Greek Yogurt"
+      ],
+      "deficiency_information": "Low B vitamins lead to fatigue, megaloblastic anaemia (B9/B12), peripheral neuropathy, cracked mouth corners, and neural tube risks in pregnancy."
+    },
+    {
+      "vitamin_id": 3,
+      "vitamin_name": "Vitamin C",
+      "chemical_name": "Ascorbic Acid",
+      "solubility": "Water-Soluble",
+      "daily_rda": "75–90 mg",
+      "functions": [
+        "Essential cofactor for hydroxylating collagen in skin, gums, tendons, and blood vessels",
+        "Enhances intestinal absorption of plant-based non-heme iron up to fourfold",
+        "Neutralizes reactive free radicals and regenerates oxidized Vitamin E"
+      ],
+      "food_sources": [
+        "Yellow Bell Peppers",
+        "Kiwi",
+        "Oranges",
+        "Lemons",
+        "Broccoli",
+        "Blueberries"
+      ],
+      "deficiency_information": "Severe deficiency causes scurvy, marked by bleeding gums, slow wound healing, pinpoint skin hemorrhages, joint ache, and fatigue."
+    },
+    {
+      "vitamin_id": 4,
+      "vitamin_name": "Vitamin D",
+      "chemical_name": "Calciferol (D2 & D3)",
+      "solubility": "Fat-Soluble",
+      "daily_rda": "15–20 mcg (600–800 IU)",
+      "functions": [
+        "Stimulates active calcium and phosphorus absorption in the small intestine",
+        "Maintains bone mineral density and neuromuscular coordination",
+        "Modulates innate and adaptive immune cell signaling"
+      ],
+      "food_sources": [
+        "Wild Salmon",
+        "Fortified Milk",
+        "Farm Eggs (Yolk)",
+        "UV-Exposed Mushrooms",
+        "Safe Sunlight"
+      ],
+      "deficiency_information": "Leads to rickets (bowed bones) in children, osteomalacia and osteoporosis in adults, muscle weakness, and chronic bone pain."
+    },
+    {
+      "vitamin_id": 5,
+      "vitamin_name": "Vitamin E",
+      "chemical_name": "Alpha-Tocopherol",
+      "solubility": "Fat-Soluble",
+      "daily_rda": "15 mg",
+      "functions": [
+        "Protects polyunsaturated fatty acids in cell membranes from lipid peroxidation",
+        "Supports red blood cell stability and vascular endothelial function",
+        "Aids T-cell mediated immune responses and skin barrier resilience"
+      ],
+      "food_sources": [
+        "Raw Almonds",
+        "Avocado",
+        "Sunflower Seeds",
+        "Spinach",
+        "Olive Oil",
+        "Broccoli"
+      ],
+      "deficiency_information": "Rare in healthy adults, but malabsorption causes peripheral nerve damage, impaired coordination (ataxia), and hemolytic anaemia."
+    },
+    {
+      "vitamin_id": 6,
+      "vitamin_name": "Vitamin K",
+      "chemical_name": "Phylloquinone (K1) & Menaquinone (K2)",
+      "solubility": "Fat-Soluble",
+      "daily_rda": "90–120 mcg",
+      "functions": [
+        "Activates prothrombin and coagulation factors II, VII, IX, and X for blood clotting",
+        "Carboxylates osteocalcin protein to bind calcium cleanly into bone matrix",
+        "Helps prevent abnormal calcium deposition in arterial walls"
+      ],
+      "food_sources": [
+        "Spinach",
+        "Broccoli",
+        "Kale",
+        "Edamame",
+        "Fermented Foods",
+        "Green Apples"
+      ],
+      "deficiency_information": "Results in prolonged bleeding after minor cuts, easy bruising, nosebleeds, and reduced bone mineralization over time."
+    }
+  ],
+  "deficiency_diseases": [
+    {
+      "disease_id": 1,
+      "disease_name": "Iron Deficiency & Anaemia",
+      "nutrient_deficiency": "Iron (Fe)",
+      "severity": "High",
+      "summary": "The most widespread nutritional deficiency globally, occurring when insufficient iron limits hemoglobin production and reduces oxygen delivery to tissues.",
+      "symptoms": [
+        "Persistent fatigue, lethargy, and reduced exercise tolerance",
+        "Pale skin and pale inner lower eyelids",
+        "Shortness of breath, dizziness, and cold hands or feet",
+        "Brittle spoon-shaped nails and difficulty concentrating"
+      ],
+      "causes": [
+        "Low dietary intake of heme or well-absorbed iron",
+        "Chronic blood loss, heavy menstruation, or gastrointestinal bleeding",
+        "Increased iron demand during pregnancy and rapid childhood growth"
+      ],
+      "prevention": [
+        "Include iron-rich lentils, spinach, chickpeas, and lean proteins regularly",
+        "Pair plant-based iron meals with Vitamin C foods (lemon juice, bell peppers) to boost absorption",
+        "Avoid drinking tea or coffee immediately alongside iron-rich meals"
+      ],
+      "recommended_foods": [
+        "Spinach",
+        "Lentils",
+        "Chickpeas",
+        "Yellow Bell Peppers",
+        "Pumpkin Seeds"
+      ]
+    },
+    {
+      "disease_id": 2,
+      "disease_name": "Vitamin A Deficiency (Xerophthalmia)",
+      "nutrient_deficiency": "Vitamin A (Retinol / Beta-Carotene)",
+      "severity": "Critical",
+      "summary": "A preventable visual and immune disorder caused by inadequate intake of preformed retinol or carotenoid precursors over weeks to months.",
+      "symptoms": [
+        "Difficulty seeing in dim light or dusk (night blindness)",
+        "Dry, thickened conjunctiva and foamy Bitot’s spots on the eye surface",
+        "Dry, scaly skin and keratinized hair follicles",
+        "Frequent respiratory or gastrointestinal infections"
+      ],
+      "causes": [
+        "Diets lacking colorful vegetables, orange/yellow fruits, dairy, or eggs",
+        "Fat malabsorption disorders limiting uptake of fat-soluble vitamins",
+        "Severe protein-energy malnutrition impairing retinol transport"
+      ],
+      "prevention": [
+        "Eat dark leafy greens and beta-carotene rich orange-yellow produce daily",
+        "Consume small amounts of healthy fats (olive oil, avocado) with vegetables to aid carotenoid absorption",
+        "Include dairy, eggs, or fortified staple foods where accessible"
+      ],
+      "recommended_foods": [
+        "Sweet Potatoes",
+        "Spinach",
+        "Carrots",
+        "Farm Eggs",
+        "Fortified Milk"
+      ]
+    },
+    {
+      "disease_id": 3,
+      "disease_name": "Vitamin D Deficiency (Rickets & Osteomalacia)",
+      "nutrient_deficiency": "Vitamin D (Calciferol)",
+      "severity": "High",
+      "summary": "Impaired calcium and phosphate mineralization of growing or mature bone tissue, resulting in skeletal softening in children (rickets) and adults (osteomalacia).",
+      "symptoms": [
+        "Deep aching bone pain in the lower back, hips, and legs",
+        "Muscle weakness, cramps, and difficulty climbing stairs",
+        "Delayed growth, soft skull bones, or bowed legs in young children",
+        "Increased risk of hairline stress fractures"
+      ],
+      "causes": [
+        "Limited midday outdoor sunlight exposure or living at high latitudes",
+        "Low intake of fatty fish, egg yolks, and Vitamin D-fortified dairy",
+        "Reduced skin synthesis capacity in older adults or darker skin without supplementation"
+      ],
+      "prevention": [
+        "Spend 10–20 minutes outdoors in safe daylight several times a week",
+        "Eat Vitamin D sources such as wild salmon, fortified milk, and egg yolks",
+        "Consult a healthcare clinician for seasonal testing and targeted supplementation"
+      ],
+      "recommended_foods": [
+        "Wild Salmon",
+        "Fortified Milk",
+        "Farm Eggs",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "disease_id": 4,
+      "disease_name": "Vitamin C Deficiency (Scurvy)",
+      "nutrient_deficiency": "Vitamin C (Ascorbic Acid)",
+      "severity": "Moderate",
+      "summary": "A collagen-synthesis disorder developing within 1–3 months of severely low fresh fruit and vegetable consumption.",
+      "symptoms": [
+        "Swollen, spongy, and easily bleeding gums",
+        "Slow-healing cuts and reopening of older scars",
+        "Small red or purple pinpoint spots around hair follicles (petechiae)",
+        "Joint discomfort, irritability, and generalized weakness"
+      ],
+      "causes": [
+        "Prolonged absence of fresh fruits and lightly cooked vegetables in the diet",
+        "Overcooking produce in water, which destroys heat-sensitive ascorbic acid",
+        "Smoking or chronic malabsorption increasing daily Vitamin C turnover"
+      ],
+      "prevention": [
+        "Eat at least two servings of raw or lightly steamed produce daily",
+        "Include citrus fruits, kiwi, berries, broccoli, or yellow bell peppers",
+        "Steam or stir-fry vegetables briefly rather than boiling extensively"
+      ],
+      "recommended_foods": [
+        "Yellow Bell Peppers",
+        "Kiwi",
+        "Oranges",
+        "Broccoli",
+        "Blueberries"
+      ]
+    },
+    {
+      "disease_id": 5,
+      "disease_name": "Iodine Deficiency (Goiter & Hypothyroidism)",
+      "nutrient_deficiency": "Iodine (I)",
+      "severity": "Critical",
+      "summary": "Inadequate iodine prevents the thyroid gland from synthesizing T3 and T4 metabolic hormones, causing compensatory thyroid enlargement (goiter).",
+      "symptoms": [
+        "Visible swelling at the base of the neck (goiter)",
+        "Unexplained fatigue, sluggish metabolism, and weight gain",
+        "Dry skin, hair thinning, and heightened cold sensitivity",
+        "Impaired cognitive development during fetal and early childhood stages"
+      ],
+      "causes": [
+        "Living in inland or mountainous regions with iodine-depleted soils",
+        "Using non-iodized specialty salts without alternative marine or dairy sources",
+        "High consumption of raw goitrogenic foods alongside marginal iodine intake"
+      ],
+      "prevention": [
+        "Use iodized table salt in moderation for everyday household cooking",
+        "Include dairy products, eggs, and marine seafood in weekly meal plans",
+        "Ensure adequate maternal iodine intake prior to and during pregnancy"
+      ],
+      "recommended_foods": [
+        "Fresh Milk",
+        "Greek Yogurt",
+        "Wild Salmon",
+        "Farm Eggs"
+      ]
+    }
+  ],
+  "healthy_foods": [
+    {
+      "food_id": 1,
+      "food_name": "Fresh Blueberries",
+      "food_category": "Fruits",
+      "serving_size": "1 cup (148 g)",
+      "calories": 84,
+      "key_nutrients": [
+        "Vitamin C",
+        "Vitamin K",
+        "Anthocyanins",
+        "Fiber"
+      ],
+      "benefits": "Dense in polyphenol antioxidants that protect blood vessels, sharpen memory, and reduce oxidative stress.",
+      "image_url": "/src/assets/images/food_fruits_vegetables_1794995821699.jpg"
+    },
+    {
+      "food_id": 2,
+      "food_name": "Green Kiwi",
+      "food_category": "Fruits",
+      "serving_size": "2 medium (140 g)",
+      "calories": 85,
+      "key_nutrients": [
+        "Vitamin C",
+        "Potassium",
+        "Folate",
+        "Soluble Fiber"
+      ],
+      "benefits": "Delivers more than 100% of daily Vitamin C needs alongside actinidin enzymes that aid protein digestion.",
+      "image_url": "/src/assets/images/food_fruits_vegetables_1794995821699.jpg"
+    },
+    {
+      "food_id": 3,
+      "food_name": "Valencia Oranges & Lemons",
+      "food_category": "Fruits",
+      "serving_size": "1 medium orange (130 g)",
+      "calories": 62,
+      "key_nutrients": [
+        "Vitamin C",
+        "Folate",
+        "Citrate",
+        "Flavonoids"
+      ],
+      "benefits": "Supports collagen synthesis, immune defense, and plant-based iron absorption when paired with meals.",
+      "image_url": "/src/assets/images/food_fruits_vegetables_1794995821699.jpg"
+    },
+    {
+      "food_id": 4,
+      "food_name": "Baby Spinach",
+      "food_category": "Vegetables",
+      "serving_size": "2 cups raw (60 g)",
+      "calories": 14,
+      "key_nutrients": [
+        "Vitamin K",
+        "Vitamin A",
+        "Folate",
+        "Iron"
+      ],
+      "benefits": "Supports eye macula health via lutein, strengthens bone proteins, and supplies plant iron and magnesium.",
+      "image_url": "/src/assets/images/food_fruits_vegetables_1794995821699.jpg"
+    },
+    {
+      "food_id": 5,
+      "food_name": "Steamed Broccoli Florets",
+      "food_category": "Vegetables",
+      "serving_size": "1 cup (91 g)",
+      "calories": 31,
+      "key_nutrients": [
+        "Vitamin C",
+        "Vitamin K",
+        "Sulforaphane",
+        "Fiber"
+      ],
+      "benefits": "Cruciferous phytonutrients activate cellular detoxification pathways while supplying bone-building minerals.",
+      "image_url": "/src/assets/images/about_balanced_plate_1794995822234.jpg"
+    },
+    {
+      "food_id": 6,
+      "food_name": "Yellow Bell Peppers",
+      "food_category": "Vegetables",
+      "serving_size": "1 large pepper (186 g)",
+      "calories": 50,
+      "key_nutrients": [
+        "Vitamin C",
+        "Vitamin B6",
+        "Beta-Carotene",
+        "Potassium"
+      ],
+      "benefits": "One of the richest culinary sources of Vitamin C and carotenoids for immune resilience and skin health.",
+      "image_url": "/src/assets/images/hero_nutrition_spread_1794995822237.jpg"
+    },
+    {
+      "food_id": 7,
+      "food_name": "Plain Greek Yogurt",
+      "food_category": "Milk Products",
+      "serving_size": "170 g bowl",
+      "calories": 100,
+      "key_nutrients": [
+        "Protein",
+        "Calcium",
+        "Probiotics",
+        "Vitamin B12"
+      ],
+      "benefits": "Strained dairy packed with complete protein, bioavailable calcium, iodine, and live gut-supporting cultures.",
+      "image_url": "/src/assets/images/food_nuts_grains_dairy_1794995820392.jpg"
+    },
+    {
+      "food_id": 8,
+      "food_name": "Fresh Fortified Milk",
+      "food_category": "Milk Products",
+      "serving_size": "1 glass (240 ml)",
+      "calories": 110,
+      "key_nutrients": [
+        "Calcium",
+        "Vitamin D",
+        "Iodine",
+        "Riboflavin"
+      ],
+      "benefits": "Combines bone-forming calcium and phosphorus with Vitamin D and iodine to protect thyroid and skeletal health.",
+      "image_url": "/src/assets/images/food_nuts_grains_dairy_1794995820392.jpg"
+    },
+    {
+      "food_id": 9,
+      "food_name": "Raw Whole Almonds",
+      "food_category": "Nuts",
+      "serving_size": "28 g (23 kernels)",
+      "calories": 164,
+      "key_nutrients": [
+        "Vitamin E",
+        "Magnesium",
+        "Monounsaturated Fat",
+        "Fiber"
+      ],
+      "benefits": "Provides antioxidant Vitamin E and heart-healthy fats that stabilize cholesterol and post-meal satiety.",
+      "image_url": "/src/assets/images/food_nuts_grains_dairy_1794995820392.jpg"
+    },
+    {
+      "food_id": 10,
+      "food_name": "California Walnuts",
+      "food_category": "Nuts",
+      "serving_size": "28 g (14 halves)",
+      "calories": 185,
+      "key_nutrients": [
+        "ALA Omega-3",
+        "Copper",
+        "Manganese",
+        "Polyphenols"
+      ],
+      "benefits": "Leading plant source of alpha-linolenic acid (ALA) omega-3 fatty acids supporting brain and vascular function.",
+      "image_url": "/src/assets/images/food_nuts_grains_dairy_1794995820392.jpg"
+    },
+    {
+      "food_id": 11,
+      "food_name": "Steel-Cut & Rolled Oats",
+      "food_category": "Whole Grains",
+      "serving_size": "1/2 cup dry (40 g)",
+      "calories": 150,
+      "key_nutrients": [
+        "Beta-Glucan Fiber",
+        "Thiamin (B1)",
+        "Manganese",
+        "Iron"
+      ],
+      "benefits": "Soluble beta-glucan fiber binds cholesterol in the digestive tract and provides steady slow-release energy.",
+      "image_url": "/src/assets/images/food_nuts_grains_dairy_1794995820392.jpg"
+    },
+    {
+      "food_id": 12,
+      "food_name": "Organic Tri-Color Quinoa",
+      "food_category": "Whole Grains",
+      "serving_size": "1 cup cooked (185 g)",
+      "calories": 222,
+      "key_nutrients": [
+        "Complete Protein",
+        "Folate",
+        "Magnesium",
+        "Fiber"
+      ],
+      "benefits": "Naturally gluten-free seed grain containing all nine essential amino acids plus steady complex carbohydrates.",
+      "image_url": "/src/assets/images/about_balanced_plate_1794995822234.jpg"
+    },
+    {
+      "food_id": 13,
+      "food_name": "Wild Caught Salmon",
+      "food_category": "Protein-Rich Foods",
+      "serving_size": "120 g fillet",
+      "calories": 215,
+      "key_nutrients": [
+        "EPA/DHA Omega-3",
+        "Vitamin D",
+        "Protein",
+        "Vitamin B12"
+      ],
+      "benefits": "High-biological-value protein rich in Vitamin D and marine omega-3s that nourish heart and brain tissues.",
+      "image_url": "/src/assets/images/food_protein_wholesome_1794995822998.jpg"
+    },
+    {
+      "food_id": 14,
+      "food_name": "Green & Brown Lentils",
+      "food_category": "Protein-Rich Foods",
+      "serving_size": "1 cup cooked (198 g)",
+      "calories": 230,
+      "key_nutrients": [
+        "Plant Protein",
+        "Iron",
+        "Folate",
+        "Prebiotic Fiber"
+      ],
+      "benefits": "Economical legume powerhouse delivering non-heme iron, folate, and slow-digesting starch for blood sugar balance.",
+      "image_url": "/src/assets/images/food_protein_wholesome_1794995822998.jpg"
+    },
+    {
+      "food_id": 15,
+      "food_name": "Soft-Boiled Farm Eggs",
+      "food_category": "Protein-Rich Foods",
+      "serving_size": "2 large eggs (100 g)",
+      "calories": 143,
+      "key_nutrients": [
+        "Choline",
+        "Protein",
+        "Vitamin A",
+        "Vitamin D"
+      ],
+      "benefits": "Reference-standard protein containing brain-essential choline and bioavailable carotenoids in the yolk.",
+      "image_url": "/src/assets/images/food_protein_wholesome_1794995822998.jpg"
+    },
+    {
+      "food_id": 16,
+      "food_name": "Steamed Edamame & Chickpeas",
+      "food_category": "Protein-Rich Foods",
+      "serving_size": "1 cup mixed (155 g)",
+      "calories": 195,
+      "key_nutrients": [
+        "Complete Soy Protein",
+        "Vitamin K",
+        "Iron",
+        "Fiber"
+      ],
+      "benefits": "Plant-forward legumes providing sustained amino acids, isoflavones, and mineral density.",
+      "image_url": "/src/assets/images/food_protein_wholesome_1794995822998.jpg"
+    },
+    {
+      "food_id": 17,
+      "food_name": "Hass Avocado",
+      "food_category": "Fruits",
+      "serving_size": "1/2 fruit (100 g)",
+      "calories": 160,
+      "key_nutrients": [
+        "Monounsaturated Fat",
+        "Potassium",
+        "Vitamin E",
+        "Folate"
+      ],
+      "benefits": "Creamy fruit rich in oleic acid that boosts fat-soluble vitamin uptake from accompanying salad greens.",
+      "image_url": "/src/assets/images/hero_nutrition_spread_1794995822237.jpg"
+    },
+    {
+      "food_id": 18,
+      "food_name": "Roasted Sweet Potato",
+      "food_category": "Vegetables",
+      "serving_size": "1 medium (130 g)",
+      "calories": 112,
+      "key_nutrients": [
+        "Beta-Carotene (Vit A)",
+        "Potassium",
+        "Vitamin B6",
+        "Fiber"
+      ],
+      "benefits": "Vibrant root vegetable supplying over 300% of daily provitamin A needs alongside sustained complex carbs.",
+      "image_url": "/src/assets/images/about_balanced_plate_1794995822234.jpg"
+    }
+  ],
+  "contact_messages": [
+    {
+      "message_id": 1,
+      "user_name": "Test User",
+      "email": "test@example.com",
+      "subject": "Nutrition Inquiry",
+      "message": "Testing contact endpoint persistence.",
+      "created_at": "2026-11-18T10:02:28.437Z"
+    }
+  ],
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "topic": "Core Nutrients",
+      "question": "Which macronutrient serves as the primary and fastest energy source for the brain and working muscles?",
+      "options": [
+        "Carbohydrates",
+        "Minerals",
+        "Vitamin E",
+        "Dietary Cholesterol"
+      ],
+      "correct_index": 0,
+      "explanation": "Carbohydrates break down into glucose, which is the preferred immediate fuel for brain neurons and muscle contraction."
+    },
+    {
+      "question_id": 2,
+      "topic": "Vitamins & Absorption",
+      "question": "Which pair correctly lists two fat-soluble vitamins that absorb best alongside healthy dietary fats?",
+      "options": [
+        "Vitamin C and Vitamin B12",
+        "Vitamin A and Vitamin D",
+        "Vitamin B1 and Vitamin C",
+        "Folate and Biotin"
+      ],
+      "correct_index": 1,
+      "explanation": "Vitamins A, D, E, and K are fat-soluble and require dietary lipids for optimal intestinal absorption."
+    },
+    {
+      "question_id": 3,
+      "topic": "Deficiency Diseases",
+      "question": "A chronic deficiency of Vitamin C impairs collagen formation and leads to which classic condition?",
+      "options": [
+        "Rickets",
+        "Scurvy",
+        "Goiter",
+        "Night Blindness"
+      ],
+      "correct_index": 1,
+      "explanation": "Vitamin C is required to hydroxylate collagen fibers; prolonged deficiency causes scurvy (bleeding gums and fragile vessels)."
+    },
+    {
+      "question_id": 4,
+      "topic": "Nutrient Synergy",
+      "question": "Pairing spinach or lentils with fresh lemon juice or yellow bell peppers improves the absorption of which mineral?",
+      "options": [
+        "Iodine",
+        "Non-heme Iron",
+        "Sodium",
+        "Fluoride"
+      ],
+      "correct_index": 1,
+      "explanation": "Vitamin C (ascorbic acid) converts plant non-heme iron into a more soluble ferrous form in the gut, multiplying absorption."
+    },
+    {
+      "question_id": 5,
+      "topic": "Deficiency Diseases",
+      "question": "Swelling of the thyroid gland at the base of the neck (goiter) is most commonly linked to low intake of which mineral?",
+      "options": [
+        "Potassium",
+        "Magnesium",
+        "Iodine",
+        "Zinc"
+      ],
+      "correct_index": 2,
+      "explanation": "The thyroid gland requires iodine to produce T3 and T4 hormones; low iodine triggers compensatory gland enlargement."
+    },
+    {
+      "question_id": 6,
+      "topic": "Vitamins",
+      "question": "Which vitamin plays a central role in activating blood clotting proteins and binding calcium to bone?",
+      "options": [
+        "Vitamin K",
+        "Vitamin B6",
+        "Vitamin C",
+        "Vitamin B2"
+      ],
+      "correct_index": 0,
+      "explanation": "Vitamin K activates prothrombin and coagulation factors while carboxylating osteocalcin for bone mineralization."
+    },
+    {
+      "question_id": 7,
+      "topic": "Healthy Foods",
+      "question": "Which whole grain is naturally gluten-free and supplies all nine essential amino acids as a complete protein?",
+      "options": [
+        "White Rice",
+        "Quinoa",
+        "Cornstarch",
+        "Refined Semolina"
+      ],
+      "correct_index": 1,
+      "explanation": "Quinoa is a nutrient-dense pseudocereal grain containing a balanced profile of all nine essential amino acids."
+    },
+    {
+      "question_id": 8,
+      "topic": "Deficiency Diseases",
+      "question": "Insufficient Vitamin D during childhood interferes with calcium mineralization and can lead to which bone condition?",
+      "options": [
+        "Scurvy",
+        "Rickets",
+        "Anaemia",
+        "Pellagra"
+      ],
+      "correct_index": 1,
+      "explanation": "Vitamin D deficiency impairs intestinal calcium uptake, causing soft, weakened bones known as rickets in children."
+    },
+    {
+      "question_id": 9,
+      "topic": "Healthy Foods",
+      "question": "Walnuts stand out among tree nuts for their unusually high concentration of which heart-healthy fatty acid?",
+      "options": [
+        "Trans fatty acids",
+        "ALA Omega-3 fatty acids",
+        "Palmitic acid",
+        "Lauric acid"
+      ],
+      "correct_index": 1,
+      "explanation": "Walnuts are the richest tree-nut source of plant-based alpha-linolenic acid (ALA), an essential omega-3 fat."
+    },
+    {
+      "question_id": 10,
+      "topic": "Hydration & Balance",
+      "question": "Roughly what percentage of an adult human body is composed of water?",
+      "options": [
+        "About 15%",
+        "About 30%",
+        "About 60%",
+        "About 95%"
+      ],
+      "correct_index": 2,
+      "explanation": "Water makes up approximately 60% of adult body mass and drives nutrient transport, thermoregulation, and kidney clearance."
+    }
+  ],
+  "sessions": [
+    {
+      "token": "3387683b04d26c7ab04ab4d2fc70a9a4e591ed5c5c654c702f991532857873e2",
+      "user_id": 1,
+      "expires_at": 1795600953788
+    }
+  ]
+}
